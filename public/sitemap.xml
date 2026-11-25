@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url><loc>https://dealradar.shopandsave.workers.dev/</loc></url>
 <url><loc>https://dealradar.shopandsave.workers.dev/guides/</loc></url>
@@ -14,4 +14,4 @@
 <url><loc>https://dealradar.shopandsave.workers.dev/guides/jump-starter.html</loc></url>
 <url><loc>https://dealradar.shopandsave.workers.dev/guides/dash-camera.html</loc></url>
 <url><loc>https://dealradar.shopandsave.workers.dev/guides/bulk-buying.html</loc></url>
-</urlset>
+<url><loc>https://dealradar.shopandsave.workers.dev/shop/appliances/</loc></url><url><loc>https://dealradar.shopandsave.workers.dev/shop/batteries/</loc></url><url><loc>https://dealradar.shopandsave.workers.dev/shop/electric-bikes/</loc></url><url><loc>https://dealradar.shopandsave.workers.dev/shop/furniture/</loc></url><url><loc>https://dealradar.shopandsave.workers.dev/shop/gaming/</loc></url><url><loc>https://dealradar.shopandsave.workers.dev/shop/hobbies/</loc></url><url><loc>https://dealradar.shopandsave.workers.dev/shop/</loc></url><url><loc>https://dealradar.shopandsave.workers.dev/shop/outdoor/</loc></url><url><loc>https://dealradar.shopandsave.workers.dev/shop/tools/</loc></url></urlset>
