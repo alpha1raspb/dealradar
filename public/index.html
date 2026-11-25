@@ -77,67 +77,147 @@ footer {
     font-size:13px;
     line-height:1.7;
 }
+
+.category-grid {
+    display:grid;
+    grid-template-columns:repeat(4,minmax(0,1fr));
+    gap:16px;
+    margin:24px 0;
+}
+.category-card {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+    background:white;
+    border:1px solid #e2e8f0;
+    border-radius:14px;
+    padding:24px 10px;
+    color:#172033;
+    text-decoration:none;
+    text-align:center;
+    transition:transform .2s,box-shadow .2s;
+}
+.category-card span {
+    font-size:34px;
+}
+.category-card:hover {
+    transform:translateY(-4px);
+    box-shadow:0 8px 24px #00000012;
+    border-color:#16a34a;
+}
+.card {
+    box-shadow:0 3px 12px #00000008;
+}
+.card img {
+    max-width:100%;
+    height:180px;
+    object-fit:contain;
+}
+.card .button {
+    text-align:center;
+}
+.disclosure {
+    color:#526174;
+    font-size:13px;
+    padding:12px 0;
+}
+main h2 {
+    margin-top:36px;
+    letter-spacing:-0.5px;
+}
+@media(max-width:700px) {
+    .category-grid {
+        grid-template-columns:repeat(2,minmax(0,1fr));
+    }
+    header {
+        justify-content:center;
+        gap:15px;
+    }
+    nav {
+        text-align:center;
+        line-height:2;
+    }
+    .hero {
+        padding:45px 16px;
+    }
+}
+
 </style>
 </head>
 <body>
 <header>
 <div class="logo">Deal<span>Radar</span></div>
 <nav>
-<a href="#categories">Categories</a>
+<a href="#deals">Price Drops</a>
 <a href="/shop/">Shop by Category</a> | <a href="/guides/">Buying Guides</a>
 <a href="#about">About</a>
 </nav>
 </header>
 
 <section class="hero">
-<h1>Discover deals. Spend smarter.</h1>
-<p>Helping everyday shoppers find better value.</p>
-<a class="button" href="#categories">Explore Categories</a>
+<h1>Find your next great purchase.</h1>
+<p>Explore products, compare options and discover retailer price reductions.</p>
+<a class="button" href="/shop/">Explore Products</a>
 </section>
 
 <main>
 
-<div class="status">
-<strong>Automated discovery system active</strong>
-<p>287 potential opportunities collected for review.</p>
-<small>Last updated: November 25, 2026 at 01:09 PM</small>
-</div>
 
-<h2 id="categories">Explore Categories</h2>
+<section id="categories">
+<h2>Shop by Category</h2>
+<p>Explore our regularly updated product recommendations.</p>
 
-<div class="grid">
-<div class="card">
-<div class="category">&#128187;</div>
-<h3>Electronics</h3>
-<p>Computers, televisions and everyday technology.</p>
-</div>
-<div class="card">
-<div class="category">&#127969;</div>
-<h3>Home &amp; Garden</h3>
-<p>Household essentials and outdoor living.</p>
-</div>
-<div class="card">
-<div class="category">&#128295;</div>
-<h3>Tools</h3>
-<p>Equipment for home improvement and DIY projects.</p>
-</div>
-<div class="card">
-<div class="category">&#127918;</div>
-<h3>Gaming</h3>
-<p>Consoles, accessories and entertainment.</p>
-</div>
-<div class="card">
-<div class="category">&#128663;</div>
-<h3>Automotive</h3>
-<p>Vehicle accessories and maintenance essentials.</p>
-</div>
-<div class="card">
-<div class="category">&#128722;</div>
-<h3>Everyday Essentials</h3>
-<p>Practical products for everyday savings.</p>
-</div>
-</div>
+<div class="category-grid">
 
+<a class="category-card" href="/shop/electric-bikes/">
+<span>&#128690;</span>
+<strong>Electric Bikes</strong>
+</a>
+
+<a class="category-card" href="/shop/tools/">
+<span>&#128295;</span>
+<strong>Tools &amp; DIY</strong>
+</a>
+
+<a class="category-card" href="/shop/batteries/">
+<span>&#128267;</span>
+<strong>Batteries &amp; Power</strong>
+</a>
+
+<a class="category-card" href="/shop/hobbies/">
+<span>&#127918;</span>
+<strong>RC &amp; Hobbies</strong>
+</a>
+
+<a class="category-card" href="/shop/gaming/">
+<span>&#127918;</span>
+<strong>Gaming Chairs</strong>
+</a>
+
+<a class="category-card" href="/shop/furniture/">
+<span>&#129681;</span>
+<strong>Office Furniture</strong>
+</a>
+
+<a class="category-card" href="/shop/appliances/">
+<span>&#127968;</span>
+<strong>Home Appliances</strong>
+</a>
+
+<a class="category-card" href="/shop/outdoor/">
+<span>&#127795;</span>
+<strong>Outdoor &amp; Garden</strong>
+</a>
+
+</div>
+</section>
+
+<p class="disclosure">
+We may earn commissions when you purchase
+through affiliate links on this website.
+</p>
 
 <h2>Featured Product Recommendations</h2>
 
@@ -164,7 +244,7 @@ footer {
     not necessarily discounted.</small></p>
     
 
-<h2>Latest Price Drops</h2>
+<h2 id="deals">Latest Price Drops</h2>
 <p>Discover recent price reductions observed
 in our retailer product feeds.</p>
 <p>We are monitoring retailer prices. Qualifying price reductions will appear here when detected.</p>
